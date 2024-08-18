@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-app-nodejs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-app-nodejs
+  template:
+    metadata:
+      labels:
+        app: demo-app-nodejs
+    spec:
+      containers:
+      - name: demo-app-nodejs
+        image: {{ .Values.image.repository }}:latest
+        ports:
+        - containerPort: {{ .Values.service.port }}
