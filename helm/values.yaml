@@ -1,0 +1,11 @@
+replicaCount: 1
+image:
+  repository: debianmaster/app
+  pullPolicy: IfNotPresent
+  tag: ""
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources: {}

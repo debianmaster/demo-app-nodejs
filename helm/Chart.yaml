@@ -1,0 +1,4 @@
+apiVersion: v2
+name: demo-app-nodejs
+description: A Helm chart for demo app using Node.js
+version: 0.1.0
