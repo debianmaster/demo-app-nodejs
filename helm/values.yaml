@@ -1,11 +1,17 @@
 replicaCount: 1
+
 image:
-  repository: debianmaster/app
+  repository: debianmaster/demo-app-nodejs
   pullPolicy: IfNotPresent
-  tag: ""
 
 service:
-  type: ClusterIP
-  port: 80
+  enabled: true
+  name: demo-app-nodejs
+  port: 3000
 
 resources: {}
+
+nodeSelector: {}
+
+affinity: {}
+

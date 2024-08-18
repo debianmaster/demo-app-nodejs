@@ -1,4 +1,6 @@
 apiVersion: v2
 name: demo-app-nodejs
-description: A Helm chart for demo app using Node.js
-version: 0.1.0
+description: A Helm chart for Kubernetes
+version: 1.0.0
+
+author: chakra <chakri@zelarsoft.com>
